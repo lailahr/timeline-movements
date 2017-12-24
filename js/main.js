@@ -13,7 +13,6 @@ jQuery(document).ready(function($) {
 				"date" : entry.gsx$date.$t,
 				"icon" : icon
 			};
-			console.log(data)
 			var html = tmpl.render(data);
 			node.append(html);
 		}
@@ -38,7 +37,6 @@ jQuery(document).ready(function($) {
 	var on_blocks_loaded = function() { 
 		var timelineBlocks = $('.cd-timeline-block'),
 			offset = 0.8;
-		console.log(timelineBlocks);
 
 		//hide timeline blocks which are outside the viewport
 		hideBlocks(timelineBlocks, offset);
@@ -59,7 +57,6 @@ jQuery(document).ready(function($) {
 
 		function showBlocks(blocks, offset) {
 			blocks.each(function(){
-			console.log("yo1");
 				( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
 			});
 		}
