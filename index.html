@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+
+	<script id="templ_timeline_block" type="text/x-jsrender">
+
+		<div class="cd-timeline-block is-hidden">
+			<div class="cd-timeline-img cd-picture">
+				<img src="{{:icon}}" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>{{:title}}</h2>
+                <p>{{:content}}</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">{{:date}}</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</script>
+  	
+	<title>My Vote Counts timeline</title>
+</head>
+<body>
+	<header>
+		<h1>timeline of events</h1>
+	</header>
+	<section id="cd-timeline" class="cd-container">
+	</section> <!-- cd-timeline -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//www.jsviews.com/download/jsrender.js"></script> 
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
