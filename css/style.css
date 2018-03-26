@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Libre+Franklin');
+
 /* -------------------------------- 
 
 Primary style
@@ -16,7 +18,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Droid Serif", serif;
+  font-family: "Assistant", serif;
   color: #7f8c97;
   background-color: #fff;
 }
